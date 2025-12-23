@@ -23,8 +23,10 @@ const nextConfig = {
     ],
   },
   // Turbopack is enabled by default in Next.js 16
-  // Empty config to use Turbopack with default settings
-  turbopack: {},
+  // Set root directory to silence workspace root warning
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 module.exports = nextConfig;
