@@ -29,11 +29,11 @@ export default function Navigation() {
       {/* Navigation overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-40 bg-white"
+          className="fixed inset-0 z-40 bg-white pointer-events-auto"
           onClick={() => setIsOpen(false)}
         >
           <div
-            className="flex flex-col justify-center items-center min-h-screen"
+            className="flex flex-col justify-center items-center min-h-screen pointer-events-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button
