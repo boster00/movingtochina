@@ -74,3 +74,45 @@ progress::-webkit-progress-value {
 .btn {
   text-transform: capitalize !important;
 }
+
+/* Guide/article readability */
+.prose-guide h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: #111;
+}
+.prose-guide h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+.prose-guide p {
+  margin-bottom: 0.5rem;
+}
+.prose-guide ul, .prose-guide ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+.prose-guide li {
+  margin-bottom: 0.35rem;
+}
+.prose-guide a {
+  color: #c41e3a;
+  text-decoration: underline;
+}
+.prose-guide a:hover {
+  opacity: 0.85;
+}
+.prose-guide strong {
+  font-weight: 600;
+  color: #111;
+}
+
+/* Homepage / SERES-style design */
+.font-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}

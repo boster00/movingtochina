@@ -1,0 +1,581 @@
+/* Scoped styles for China Immigration & Visa Services page */
+.immigration-services-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.immigration-services-page {
+  --primary: #c41e3a;
+  --primary-dark: #a01830;
+  --secondary: #1a1a2e;
+  --accent: #d4af37;
+  --text-dark: #1a1a1a;
+  --text-light: #4a5568;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --white: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--white);
+}
+.immigration-services-page .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.immigration-services-page .container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.immigration-services-page .hero {
+  background: linear-gradient(135deg, var(--secondary) 0%, #2d3748 100%);
+  color: var(--white);
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+.immigration-services-page .hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" opacity="0.05"><path d="M0 0h1200v800H0z" fill="%23fff"/><circle cx="900" cy="200" r="300" fill="%23fff"/><circle cx="1000" cy="600" r="250" fill="%23fff"/></svg>') no-repeat center;
+  background-size: cover;
+}
+.immigration-services-page .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+.immigration-services-page .hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .hero p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+.immigration-services-page .cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.immigration-services-page .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.immigration-services-page .btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+.immigration-services-page .btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(196, 30, 58, 0.3);
+}
+.immigration-services-page .btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.immigration-services-page .btn-secondary:hover {
+  background: var(--white);
+  color: var(--secondary);
+}
+.immigration-services-page .trust-bar {
+  background: var(--gray-50);
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+.immigration-services-page .trust-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+.immigration-services-page .trust-item svg {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 0.75rem;
+  fill: var(--primary);
+}
+.immigration-services-page .trust-item h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+.immigration-services-page .trust-item p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+.immigration-services-page section {
+  padding: 5rem 0;
+}
+.immigration-services-page .section-light {
+  background: var(--white);
+}
+.immigration-services-page .section-gray {
+  background: var(--gray-50);
+}
+.immigration-services-page .section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+.immigration-services-page .section-label {
+  display: inline-block;
+  background: rgba(196, 30, 58, 0.1);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.immigration-services-page .section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+.immigration-services-page .section-description {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+.immigration-services-page .visa-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.immigration-services-page .visa-card {
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+.immigration-services-page .visa-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+.immigration-services-page .visa-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .visa-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(196, 30, 58, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.immigration-services-page .visa-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary);
+}
+.immigration-services-page .visa-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.immigration-services-page .visa-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .visa-features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .visa-features li {
+  padding: 0.5rem 0;
+  color: var(--text-light);
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+}
+.immigration-services-page .visa-features li::before {
+  content: '✓';
+  color: var(--primary);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.immigration-services-page .process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+.immigration-services-page .step-card {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  border: 2px solid var(--gray-200);
+}
+.immigration-services-page .step-number {
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(196, 30, 58, 0.3);
+}
+.immigration-services-page .step-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+.immigration-services-page .step-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.immigration-services-page .step-details {
+  background: var(--gray-50);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+.immigration-services-page .residence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.immigration-services-page .residence-card {
+  background: var(--white);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+.immigration-services-page .residence-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+.immigration-services-page .residence-header {
+  background: var(--primary);
+  color: var(--white);
+  padding: 2rem;
+  text-align: center;
+}
+.immigration-services-page .residence-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.immigration-services-page .residence-header p {
+  opacity: 0.9;
+}
+.immigration-services-page .residence-body {
+  padding: 2rem;
+}
+.immigration-services-page .residence-features {
+  list-style: none;
+}
+.immigration-services-page .residence-features li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--gray-200);
+  color: var(--text-light);
+}
+.immigration-services-page .residence-features li:last-child {
+  border-bottom: none;
+}
+.immigration-services-page .family-support-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+.immigration-services-page .support-list {
+  list-style: none;
+}
+.immigration-services-page .support-item {
+  background: var(--white);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.immigration-services-page .support-item h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.immigration-services-page .support-item p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+.immigration-services-page .support-visual {
+  background: rgba(196, 30, 58, 0.05);
+  border-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.immigration-services-page .support-visual svg {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 2rem;
+  fill: var(--primary);
+  opacity: 0.8;
+}
+.immigration-services-page .support-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  width: 100%;
+}
+.immigration-services-page .stat-box {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+.immigration-services-page .stat-box .number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+}
+.immigration-services-page .stat-box .label {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+.immigration-services-page .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.immigration-services-page .service-card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid var(--gray-200);
+  transition: all 0.3s ease;
+}
+.immigration-services-page .service-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.immigration-services-page .service-card svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .service-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+.immigration-services-page .service-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+.immigration-services-page .corporate-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+.immigration-services-page .feature-list {
+  list-style: none;
+}
+.immigration-services-page .feature-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.immigration-services-page .feature-icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(196, 30, 58, 0.1);
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.immigration-services-page .feature-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--primary);
+}
+.immigration-services-page .feature-content h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+}
+.immigration-services-page .feature-content p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+.immigration-services-page .corporate-cta {
+  background: linear-gradient(135deg, var(--secondary) 0%, #2d3748 100%);
+  color: var(--white);
+  padding: 3rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+.immigration-services-page .corporate-cta h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.immigration-services-page .corporate-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+.immigration-services-page .cta-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: var(--white);
+  padding: 5rem 0;
+}
+.immigration-services-page .cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.immigration-services-page .cta-section h2 {
+  color: var(--white);
+  font-size: 2.75rem;
+  margin-bottom: 1.5rem;
+}
+.immigration-services-page .cta-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+.immigration-services-page .contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.immigration-services-page .contact-method {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+.immigration-services-page .contact-method:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px);
+}
+.immigration-services-page .contact-method svg {
+  width: 48px;
+  height: 48px;
+  fill: var(--white);
+  margin-bottom: 1rem;
+}
+.immigration-services-page .contact-method h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.immigration-services-page .contact-method p {
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+.immigration-services-page .contact-method a {
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .immigration-services-page .hero h1 {
+    font-size: 2rem;
+  }
+  .immigration-services-page .hero p {
+    font-size: 1rem;
+  }
+  .immigration-services-page .section-header h2,
+  .immigration-services-page .cta-section h2 {
+    font-size: 1.875rem;
+  }
+  .immigration-services-page .family-support-content,
+  .immigration-services-page .corporate-features {
+    grid-template-columns: 1fr;
+  }
+  .immigration-services-page .process-steps,
+  .immigration-services-page .visa-grid,
+  .immigration-services-page .residence-grid,
+  .immigration-services-page .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .immigration-services-page .cta-buttons {
+    flex-direction: column;
+  }
+  .immigration-services-page .btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .immigration-services-page section {
+    padding: 3rem 0;
+  }
+}
